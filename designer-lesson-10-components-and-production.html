@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.C.1.4 (partial); ELA.K12.EE.5.1" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(9)(A); TEKS 110.37(c)(10)(B)" />
+<title>English 2 Honors &middot; Designer&#39;s Table, Lesson 10: Components and Production</title>
+<link rel="stylesheet" href="project.css" />
+</head>
+<body data-ns="eng2h.designer" data-lesson="L10" data-title="Designer&#39;s Table, Lesson 10: Components and Production" data-course="English 2 Honors" data-project-name="The Designer&#39;s Table" data-assignment="Honors Sprint 10" data-code="ELA10H">
+<div class="frame" id="pageTop">
+<div class="progress-wrap"><span class="progress-label">LESSON PROGRESS</span><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><span class="progress-pct" id="progressPct">0%</span></div>
+<div class="header"><div class="header-brand"><div class="header-logo"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" /></div><div><div class="header-org">Optima Academy Online</div><div class="header-tag">An Education Experience Company</div></div></div><div class="header-course">ENGLISH 2 HONORS</div></div>
+<div class="strip"><div class="strip-cell"><div class="strip-k">The Designer&#39;s Table</div><div class="strip-v">Honors Sprint 10</div><div class="strip-s">Components and Production</div></div><div class="strip-cell"><div class="strip-k">Lesson</div><div class="strip-v">10 of 18</div><div class="strip-s">Module 3, Weeks 3 to 4</div></div><div class="strip-cell"><div class="strip-k">You make</div><div class="strip-v">A component plan and a Midsummer lens paragraph</div><div class="strip-s">Saved as a PDF</div></div><div class="strip-cell"><div class="strip-k">Turn in</div><div class="strip-v">Your Word file + this PDF</div><div class="strip-s">Sprint 10: Components and Production in Canvas</div></div></div>
+<div style="padding: 18px 28px 0 28px;">
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+</div>
+
+<div class="intro"><div class="title-card"><div class="title-k">Lesson 10</div><div class="title-h">Components and Production</div><div class="title-s">A game on paper has to become a game on a table. You decide what pieces it needs, plan a version anyone can print and make, and test two ideas from A Midsummer Night's Dream against your rules: hidden roles and transformation.</div></div><div class="path"><div class="path-title">YOUR PATH TODAY</div><div class="path-steps"><span class="path-step">Choose your modality</span><span class="path-arrow">&#8594;</span><span class="path-step">List your components</span><span class="path-arrow">&#8594;</span><span class="path-step">Plan production</span><span class="path-arrow">&#8594;</span><span class="path-step">Apply the Midsummer lens</span><span class="path-arrow">&#8594;</span><span class="path-step">Check an AI layout</span><span class="path-arrow">&#8594;</span><span class="path-step">Download your PDF</span></div></div><div class="need-strip"><span class="need-label">You will need:</span><span class="need-chip">About 75 minutes</span><span class="need-chip">Your style guide from Lesson 9</span><span class="need-chip">Your prototype v2 description from Lesson 8</span></div><div class="project-strip" data-fields="world,question"></div><div class="q plain" style="max-width:420px;"><div class="q-prompt">Your last name<span class="saved-dot"></span></div><input class="answer" type="text" data-key="name" data-project="name" data-label="Name" placeholder="LastName" /></div></div>
+<div class="tab-bar"><button class="tab-btn" data-tab="mod"><span class="tab-n">1</span>Components</button><button class="tab-btn" data-tab="prod"><span class="tab-n">2</span>Production plan</button><button class="tab-btn" data-tab="lens"><span class="tab-n">3</span>The Midsummer lens</button><button class="tab-btn" data-tab="layout"><span class="tab-n">4</span>AI layouts</button><button class="tab-btn" data-tab="wrap"><span class="tab-n">5</span>Wrap up</button></div>
+<div class="reset-row"><button class="reset-btn">Start this lesson over</button></div>
+<!-- ===== Modality and components ===== -->
+<div class="tab-panel" id="tab-mod"><div class="activity bl-navy"><div class="activity-head"><div class="activity-num">1</div><div><div class="activity-title">Choose your form and list your pieces</div><div class="activity-sub">The floor first, extras after</div></div></div><div class="activity-body"><svg viewBox="0 0 720 270" role="img" aria-label="A US Letter page holds nine poker-size playing cards in three rows of three" style="display:block;max-width:720px;width:100%;margin:4px auto 14px;"><rect x="0" y="0" width="720" height="270" rx="12" fill="#0E1C42"/><rect x="140" y="30" width="178" height="228" rx="3" fill="#FFFFFF" fill-opacity="0.12" stroke="#55C8E8" stroke-width="2"/><rect x="150" y="40" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="206" y="40" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="262" y="40" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="150" y="114" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="206" y="114" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="262" y="114" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="150" y="188" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="206" y="188" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><rect x="262" y="188" width="46" height="64" rx="4" fill="none" stroke="#C7922C" stroke-width="2"/><text x="229" y="24" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#55C8E8" font-weight="600">ONE LETTER PAGE</text><text x="520" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="600">Nine cards a page</text><text x="520" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Each card is about 2.5 by 3.5 inches.</text><text x="520" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">A deck of 36 cards is four pages.</text><text x="520" y="160" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#55C8E8">Count your pages before you design the pieces.</text><text x="520" y="186" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Fewer, clearer pieces are easier to</text><text x="520" y="204" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">print, cut, and play.</text></svg><div class="coach"><span class="ci">&#9679;</span><div>Every tier is judged on the same rubric. It grades design, craftsmanship, research, and argument, not money. A hand-made or print-and-play game made with care can earn full marks. No printer, 3D printer, or purchase is ever required.</div></div><div class="choices" data-key="modality" data-label="The form of my game" data-project="modality" data-required><button class="choice" type="button" data-value="Tabletop: print-and-play or hand-made" data-fb="The default and the recommended form. A printed or hand-made set is the floor everyone can meet.">Tabletop: print-and-play or hand-made</button><button class="choice" type="button" data-value="Digital: built on a no-code tool such as Twine" data-fb="Allowed, with rails. You are graded on the design, not the code. If an AI writes code you cannot read or verify, log it honestly. It limits the polish credit, not the design credit.">Digital: built on a no-code tool such as Twine</button></div><div class="choice-fb"></div><div class="textpanel"><div class="tp-k">THE THREE TIERS OF PIECES</div><b>Floor:</b> what every player can make, a print-and-play file plus paper, scissors, and things found at home such as coins or dice. <b>Suggested:</b> store-bought dice, tokens, or wooden pieces. <b>Optional:</b> 3D-print files (STL) for pieces, for students who already have access to a printer.</div><div class="carry" data-from="L8.v2" data-k="Your prototype v2 (Lesson 8)" data-empty="Fill in Lesson 8 first."></div><div class="q"><div class="q-prompt">My component list<div class="q-hint">Each piece, how many, and the rule that needs it.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="comps" data-label="My component list" data-required></textarea></div><div class="q"><div class="q-prompt">Pieces that hide information or change during play<div class="q-hint">Secret cards, face-down tiles, pieces that flip or swap. Say which rule uses each.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="compHidden" data-label="Pieces that hide information or change during play" data-required></textarea></div></div></div><button class="tab-next" data-next="prod">Continue: production plan &#8594;</button></div>
+<!-- ===== Production plan ===== -->
+<div class="tab-panel" id="tab-prod"><div class="activity bl-burgundy"><div class="activity-head"><div class="activity-num">2</div><div><div class="activity-title">Plan the print-and-play version</div><div class="activity-sub">A stranger can make it</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Plan a version that a stranger could print and assemble in about half an hour. List what the floor version needs, then any optional upgrades. Use your style guide from Lesson 9 for the look.</div></div><div class="carry" data-from="L9.gPalette" data-k="Your palette (Lesson 9)" data-empty="Fill in Lesson 9 first."></div><div class="q"><div class="q-prompt">The print-and-play file<div class="q-hint">How many pages. What is on each page. Cut, fold, and glue steps.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="ppFile" data-label="The print-and-play file" data-required></textarea></div><div class="q"><div class="q-prompt">Materials, with cost<div class="q-hint">Everything needed to make the floor version, an estimate of the cost, and how long assembly takes.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="ppCost" data-label="Materials, with cost and time" data-required></textarea></div><div class="q"><div class="q-prompt">Optional pieces<div class="q-hint">Suggested pieces to buy or 3D-print files you could add. Write "none" if none. Nothing here may be required to play.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="ppOpt" data-label="Optional pieces" data-required></textarea></div><div class="check"><div class="check-k">QUICK CHECK &middot; NOT GRADED</div><div class="check-q">Which production plan meets the floor?</div><div class="check-row"><div class="opts"><button class="opt" data-correct="false" data-fb="Optional pieces cannot be required. The floor must work with no printer at all.">Resin figures from a 3D printer, with a printed board as backup</button><button class="opt" data-correct="true" data-fb="Yes. The floor version works from paper and household items. The upgrade is only extra.">Four printed pages and a coin, with dice or a spinner as an optional upgrade</button><button class="opt" data-correct="false" data-fb="A shopping list is not a plan. A stranger should be able to play without buying anything.">A list of store-bought pieces with a link to buy each one</button></div><div class="opt-fb"></div></div><button class="check-reset" type="button">Reset</button></div></div></div><button class="tab-next" data-next="lens">Continue: the Midsummer lens &#8594;</button></div>
+<!-- ===== Midsummer lens ===== -->
+<div class="tab-panel" id="tab-lens"><div class="activity bl-gold"><div class="activity-head"><div class="activity-num">3</div><div><div class="activity-title">The Midsummer lens</div><div class="activity-sub">Hidden roles and transformation: use or reject</div></div></div><div class="activity-body"><svg viewBox="0 0 720 200" role="img" aria-label="Two ideas from A Midsummer Night&#39;s Dream: hidden roles and transformation" style="display:block;max-width:720px;width:100%;margin:4px auto 14px;"><rect x="0" y="0" width="720" height="200" rx="12" fill="#0E1C42"/><text x="360" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#55C8E8" font-weight="600">TWO IDEAS A MIDSUMMER NIGHT'S DREAM OFFERS A GAME DESIGNER</text><rect x="30" y="40" width="310" height="118" rx="10" fill="none" stroke="#C7922C" stroke-width="2.5"/><text x="185.0" y="77.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">HIDDEN ROLES</text><text x="185.0" y="95.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">who someone really is stays</text><text x="185.0" y="113.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">unseen until it is revealed</text><text x="185.0" y="131.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">or guessed</text><rect x="380" y="40" width="310" height="118" rx="10" fill="none" stroke="#C7922C" stroke-width="2.5"/><text x="535.0" y="77.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">TRANSFORMATION</text><text x="535.0" y="95.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">a person or piece changes</text><text x="535.0" y="113.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">state, loyalty, or form</text><text x="535.0" y="131.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">in the middle of play</text><text x="360" y="184" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Build one into your rules, or set both aside on purpose.</text></svg><div class="coach"><span class="ci">&#9679;</span><div>In the play, a mistaken love charm turns loyalties around, and a craftsman is changed in the middle of a rehearsal. Quince says of him, <span class="pd-quote" data-src="mnd">Bless thee, Bottom! bless thee! Thou art translated.</span> (Shakespeare, <i>A Midsummer Night's Dream</i>, 3.1, public domain) Oberon describes the charm: <span class="pd-quote" data-src="mnd">The juice of it on sleeping eyelids laid</span> (2.1, public domain). Hidden identities and sudden change drive the comedy. Your game may use them, or reject them with reasons.</div></div><div class="choices" data-key="lens" data-label="What I will do with the Midsummer lens" data-required><button class="choice" type="button" data-value="Build hidden roles into my game" data-fb="Good. Name the secret, who holds it, and how it is revealed or guessed.">Build hidden roles into my game</button><button class="choice" type="button" data-value="Build transformation into my game" data-fb="Good. Name what changes, what triggers it, and what the change costs or gives.">Build transformation into my game</button><button class="choice" type="button" data-value="Build both" data-fb="Good. Keep them separate in your paragraph so each has its own rule.">Build both</button><button class="choice" type="button" data-value="Deliberately set both aside" data-fb="That is allowed. Your paragraph needs strong reasons tied to your design question.">Deliberately set both aside</button></div><div class="choice-fb"></div><div class="carry" data-from="L1.designQ" data-k="Your design question" data-empty="Fill in Lesson 1 first."></div><div class="q"><div class="q-prompt">Explain your choice, pointing to a component and a rule<div class="q-hint">Either way, point to a specific piece and a specific rule.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="lensPara" data-label="My Midsummer lens paragraph" data-required></textarea></div><div class="check"><div class="check-k">QUICK CHECK &middot; NOT GRADED</div><div class="check-q">Which describes a hidden role?</div><div class="check-row"><div class="opts"><button class="opt" data-correct="false" data-fb="That is transformation: something changes state during play.">A card that flips to a new character after a trigger</button><button class="opt" data-correct="true" data-fb="Yes. The role is concealed until revealed or guessed.">A secret goal card drawn at the start that no other player may see</button><button class="opt" data-correct="false" data-fb="That is chance in movement, not a hidden identity.">A piece that moves two spaces on a lucky roll</button></div><div class="opt-fb"></div></div><button class="check-reset" type="button">Reset</button></div></div></div><button class="tab-next" data-next="layout">Continue: AI layouts &#8594;</button></div>
+<!-- ===== AI layouts ===== -->
+<div class="tab-panel" id="tab-layout"><div class="activity bl-navy"><div class="activity-head"><div class="activity-num">4</div><div><div class="activity-title">Judge an AI layout</div><div class="activity-sub">Evaluate for clarity and cost</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Ask an AI tool, such as your school Microsoft Copilot account, to suggest layouts for your cards and board from your component list. Judge each suggestion yourself. AI cannot see your table or your tester's hands.</div></div><div class="q"><div class="q-prompt">The AI layout suggestions<div class="q-hint">Paste the part you are judging.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="aiLayout" data-label="The AI layout suggestions" data-required></textarea></div><p>Judge it on two tests. <b>Clarity:</b> can a player find the key information on a card in two seconds? <b>Cost:</b> how many pages, how much ink, how much cutting?</p><div class="q"><div class="q-prompt">Clarity: what works and what does not<span class="saved-dot"></span></div><textarea class="answer" data-key="layClear" data-label="Layout judgment: clarity" data-required></textarea></div><div class="q"><div class="q-prompt">Cost: pages, ink, and cutting<span class="saved-dot"></span></div><textarea class="answer" data-key="layCost" data-label="Layout judgment: cost" data-required></textarea></div><div class="q"><div class="q-prompt">What I kept, what I rejected, and why<span class="saved-dot"></span></div><textarea class="answer" data-key="layKeep" data-label="Layout: what I kept and rejected, with reasons" data-required></textarea></div></div></div><div class="activity bl-cyan"><div class="activity-head"><div class="activity-num">5</div><div><div class="activity-title">Your AI-Use Log row</div><div class="activity-sub">The layout step</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Your AI-Use Log keeps one row for each time you use AI on this project. It is a requirement for your portfolio. Write this sprint's row here, then copy it into your running log.</div></div><div class="q"><div class="q-prompt">What I asked the AI to do<span class="saved-dot"></span></div><textarea class="answer" data-key="l10LogAsked" data-label="AI-Use Log: what I asked the AI to do" data-required></textarea></div><div class="q"><div class="q-prompt">What it gave me<span class="saved-dot"></span></div><textarea class="answer" data-key="l10LogGave" data-label="AI-Use Log: what it gave me" data-required></textarea></div><div class="q"><div class="q-prompt">How I checked or judged it<span class="saved-dot"></span></div><textarea class="answer" data-key="l10LogChecked" data-label="AI-Use Log: how I verified or critiqued it" data-required></textarea></div><div class="q"><div class="q-prompt">What I changed, and why<span class="saved-dot"></span></div><textarea class="answer" data-key="l10LogChanged" data-label="AI-Use Log: what I changed and why" data-required></textarea></div></div></div><button class="tab-next" data-next="wrap">Continue: wrap up &#8594;</button></div>
+<div class="tab-panel" id="tab-wrap"><div class="project-strip" data-fields="world,question"></div><div class="activity bl-gold"><div class="activity-head"><div class="activity-num">6</div><div><div class="activity-title">Your Lesson 10 work, on one page</div><div class="activity-sub">Download it. This PDF goes in with your Sprint 10 submission.</div></div></div><div class="activity-body"><div class="gathered"><div class="gathered-head"><div><div class="gk">ALL YOUR WORK FROM THIS LESSON</div><div class="gt">Review, copy, or download</div></div></div><div class="gathered-body"><textarea class="gathered-output" id="gathered" readonly></textarea><div class="gathered-actions"><button class="gbtn pdf" data-action="pdf" type="button">Download as PDF</button><button class="gbtn ghost" data-action="copy" type="button">Copy the text</button></div><div class="gstatus" id="gstatus"></div></div></div><div class="turn-in"><div class="turn-in-head"><div class="gk">BEFORE YOU TURN IT IN</div><div class="gt">Check each line</div></div><div class="turn-in-body"><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I chose my form (tabletop or digital) and listed every piece with the rule that needs it.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">My print-and-play plan works from paper and household items, and optional pieces are marked optional.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">My Midsummer lens paragraph uses hidden roles or transformation, or rejects them with reasons, and points to a piece and a rule.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I judged an AI layout for clarity and cost and wrote my AI-Use Log row.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I named my Word document LastName_FirstName_ComponentPlan_ELA10H and saved it, with any layout images, in OneDrive: Optima &rarr; ELA &rarr; ELA10. I submitted Sprint 10 through the OneDrive tab in Canvas.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I added this lesson&#39;s PDF (LastName_DesignerLesson10_ELA10H) to the same submission.</div></div></div></div><div class="callout-gold" style="margin-top:14px;"><strong>Next.</strong> Your components feed the written rules. Open <a href="designer-lesson-11-the-rules-document.html">Lesson 11: The Rules Document</a> in Week 5. <a href="designer-lesson-9-the-research-board.html">Back to Lesson 9: The Research Board</a>.</div></div></div></div>
+<div class="footer"><div class="f1"><span>Optima Academy Online</span> &middot; ENGLISH 2 HONORS &middot; Module 3 &middot; A Midsummer Night&#39;s Dream</div><div class="f2">The Designer&#39;s Table &middot; Lesson 10 of 18 &middot; Components and Production</div><div class="f3">&copy; Optima Academy Online &middot; An Education Experience Company</div></div>
+</div>
+<script>window.PROJECT_LABELS = { world: "Your world", question: "Your design question" };</script>
+<script src="project.js"></script>
+</body>
+</html>

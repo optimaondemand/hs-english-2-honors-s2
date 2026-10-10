@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.C.4.1; ELA.10.C.1.3 (partial); ELA.K12.EE.1.1" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(11)(A); TEKS 110.37(c)(11)(E); TEKS 110.37(c)(5)(J)" />
+<title>English 2 Honors &middot; Designer&#39;s Table, Lesson 13: The Win Condition</title>
+<link rel="stylesheet" href="project.css" />
+</head>
+<body data-ns="eng2h.designer" data-lesson="L13" data-title="Designer&#39;s Table, Lesson 13: The Win Condition" data-course="English 2 Honors" data-project-name="The Designer&#39;s Table" data-assignment="Honors Sprint 13" data-code="ELA10H">
+<div class="frame" id="pageTop">
+<div class="progress-wrap"><span class="progress-label">LESSON PROGRESS</span><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><span class="progress-pct" id="progressPct">0%</span></div>
+<div class="header"><div class="header-brand"><div class="header-logo"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" /></div><div><div class="header-org">Optima Academy Online</div><div class="header-tag">An Education Experience Company</div></div></div><div class="header-course">ENGLISH 2 HONORS</div></div>
+<div class="strip"><div class="strip-cell"><div class="strip-k">The Designer&#39;s Table</div><div class="strip-v">Honors Sprint 13</div><div class="strip-s">The Win Condition</div></div><div class="strip-cell"><div class="strip-k">Lesson</div><div class="strip-v">13 of 18</div><div class="strip-s">Module 4, Weeks 1 to 2</div></div><div class="strip-cell"><div class="strip-k">You make</div><div class="strip-v">A win-condition audit, JStor find #4, and a revision</div><div class="strip-s">Saved as a PDF</div></div><div class="strip-cell"><div class="strip-k">Turn in</div><div class="strip-v">Your Word file + this PDF</div><div class="strip-s">Sprint 13: The Win Condition in Canvas</div></div></div>
+<div style="padding: 18px 28px 0 28px;">
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+</div>
+
+<div class="intro"><div class="title-card"><div class="title-k">Lesson 13</div><div class="title-h">The Win Condition</div><div class="title-s">Quarter 4 starts with the end of your game. You ask what winning rewards, and what that says about how to live well. You read one more scholarly source, answer an AI that calls your win condition hollow, and then rebut or revise.</div></div><div class="path"><div class="path-title">YOUR PATH TODAY</div><div class="path-steps"><span class="path-step">Audit what winning rewards</span><span class="path-arrow">&#8594;</span><span class="path-step">Log JStor find #4</span><span class="path-arrow">&#8594;</span><span class="path-step">Answer the AI</span><span class="path-arrow">&#8594;</span><span class="path-step">Revise the win condition</span><span class="path-arrow">&#8594;</span><span class="path-step">Download your PDF</span></div></div><div class="need-strip"><span class="need-label">You will need:</span><span class="need-chip">About 90 minutes</span><span class="need-chip">Your win condition and rules from Lessons 3 and 11</span><span class="need-chip">The JStor Research Tutorial lesson</span></div><div class="project-strip" data-fields="world,question"></div><div class="q plain" style="max-width:420px;"><div class="q-prompt">Your last name<span class="saved-dot"></span></div><input class="answer" type="text" data-key="name" data-project="name" data-label="Name" placeholder="LastName" /></div></div>
+<div class="tab-bar"><button class="tab-btn" data-tab="audit"><span class="tab-n">1</span>What winning rewards</button><button class="tab-btn" data-tab="jstor"><span class="tab-n">2</span>JStor find #4</button><button class="tab-btn" data-tab="ai"><span class="tab-n">3</span>The AI challenge</button><button class="tab-btn" data-tab="revise"><span class="tab-n">4</span>Revise the win condition</button><button class="tab-btn" data-tab="wrap"><span class="tab-n">5</span>Wrap up</button></div>
+<div class="reset-row"><button class="reset-btn">Start this lesson over</button></div>
+<!-- ===== Audit ===== -->
+<div class="tab-panel" id="tab-audit"><div class="activity bl-navy"><div class="activity-head"><div class="activity-num">1</div><div><div class="activity-title">Audit your win condition</div><div class="activity-sub">What winning rewards, and what that says about how to live</div></div></div><div class="activity-body"><svg viewBox="0 0 720 196" role="img" aria-label="A win condition audit compares what winning rewards with what it costs and whom it leaves out" style="display:block;max-width:720px;width:100%;margin:4px auto 14px;"><rect x="0" y="0" width="720" height="196" rx="12" fill="#0E1C42"/><text x="360" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#55C8E8" font-weight="600">THE WIN-CONDITION AUDIT</text><rect x="24" y="40" width="210" height="100" rx="10" fill="none" stroke="#C7922C" stroke-width="2.5"/><text x="129.0" y="68.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">WHAT WINNING</text><text x="129.0" y="86.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">REWARDS</text><text x="129.0" y="104.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">the behavior the rules</text><text x="129.0" y="122.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">pay off</text><text x="247" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#55C8E8">+</text><rect x="260" y="40" width="200" height="100" rx="10" fill="none" stroke="#C7922C" stroke-width="2.5"/><text x="360.0" y="77.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">WHAT IT COSTS</text><text x="360.0" y="95.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">what a winner gives up,</text><text x="360.0" y="113.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">spends, or leaves behind</text><text x="473" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#55C8E8">+</text><rect x="486" y="40" width="210" height="100" rx="10" fill="none" stroke="#C7922C" stroke-width="2.5"/><text x="591.0" y="77.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">WHO IT LEAVES OUT</text><text x="591.0" y="95.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">the other players</text><text x="591.0" y="113.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">and what they lose</text><text x="360" y="172" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#FFFFFF">Then ask: if someone lived this way, would you call it living well?</text></svg><div class="coach"><span class="ci">&#9679;</span><div>In Quarter 4 the class reads about a man who built a whole life around one goal. Ask your game the same question. A win condition tells players what to want. It makes a claim about how to live, whether or not you meant it to.</div></div><div class="carry" data-from="L3.winCond" data-k="Your win condition (Lesson 3)" data-empty="Fill in Lesson 3 first."></div><div class="carry" data-from="L3.rewardPunish" data-k="What it rewards and punishes (Lesson 3)" data-empty="Fill in Lesson 3 first."></div><div class="carry" data-from="L11.rEnd" data-k="Your ending and winning rules (Lesson 11)" data-empty="Fill in Lesson 11 first."></div><div class="choices" data-key="winRewards" data-label="What my win condition mostly rewards" data-required><button class="choice" type="button" data-value="Accumulating more than the others" data-fb="Common and clear. Look hard at what accumulating costs the winner in your rules.">Accumulating more than the others</button><button class="choice" type="button" data-value="Cooperating, or helping the group finish" data-fb="Check whether a player can still win by quietly taking more.">Cooperating, or helping the group finish</button><button class="choice" type="button" data-value="Knowing or discovering something others do not" data-fb="Check whether the reward is knowledge itself or only the advantage it gives.">Knowing or discovering something others do not</button><button class="choice" type="button" data-value="Surviving or lasting longest" data-fb="Check what survival costs, and whether anyone else pays for it.">Surviving or lasting longest</button></div><div class="choice-fb"></div><div class="q"><div class="q-prompt">What winning rewards, what it costs the winner, and whom it leaves out<div class="q-hint">Point to the specific rules that do each of the three.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="audit" data-label="My win-condition audit" data-required></textarea><div class="words"></div></div><div class="q"><div class="q-prompt">If someone lived the way my game rewards, would that be living well?<div class="q-hint">Give your answer and one reason.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="liveWell" data-label="Would the way my game rewards be living well" data-required></textarea></div></div></div><button class="tab-next" data-next="jstor">Continue: JStor find #4 &#8594;</button></div>
+<!-- ===== JStor find #4 ===== -->
+<div class="tab-panel" id="tab-jstor"><div class="activity bl-burgundy"><div class="activity-head"><div class="activity-num">2</div><div><div class="activity-title">JStor find #4</div><div class="activity-sub">The period's society, and how to live well</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>JStor is an online library of scholarly articles and books, found through your school. Go to jstor.org, choose to log in, and enter the school's shared username and password from the JStor Research Tutorial lesson. You do not need a personal account. Find one source about the society of your period and how its people understood a good life: what they honored, feared, or valued. Search the period's own ideas, such as honor, virtue, rank, wealth, or happiness, alongside your world. Log the citation, the claim you are borrowing, and one sentence on how it bears on your win condition.</div></div><div class="carry" data-from="L6.j2Shape" data-k="How JStor find #2 shaped your revision (Lesson 6)" data-empty="Fill in Lesson 6 first."></div><div class="carry" data-from="L9.j3Shape" data-k="How JStor find #3 shaped your look (Lesson 9)" data-empty="Fill in Lesson 9 first."></div><div class="q"><div class="q-prompt">Full citation<div class="q-hint">Author, title, journal or book, year, pages. Copy it from JStor.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="j4Cite" data-label="JStor find #4: full citation" data-required></textarea></div><div class="q"><div class="q-prompt">The specific claim you are borrowing<span class="saved-dot"></span></div><textarea class="answer" data-key="j4Claim" data-label="JStor find #4: the claim I am borrowing" data-required></textarea></div><div class="q"><div class="q-prompt">How this claim bears on my win condition<div class="q-hint">One sentence.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="j4Shape" data-label="JStor find #4: how it bears on my win condition" data-required></textarea></div><div class="q"><div class="q-prompt">Rank my four finds for reliability<div class="q-hint">List the four finds from most to least reliable, and give one reason for the order.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="rank" data-label="My four JStor finds ranked for reliability" data-required></textarea></div></div></div><button class="tab-next" data-next="ai">Continue: the AI challenge &#8594;</button></div>
+<!-- ===== AI challenge ===== -->
+<div class="tab-panel" id="tab-ai"><div class="activity bl-cyan"><div class="activity-head"><div class="activity-num">3</div><div><div class="activity-title">The AI challenge</div><div class="activity-sub">Rebut or revise</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Give an AI tool, such as your school Microsoft Copilot account, your audit and your ending rules. Ask it to argue as strongly as it can that your game endorses a hollow value. Read the full argument.</div></div><div style="background:#FDECEC;border-left:4px solid #C0392B;border-radius:8px;padding:12px 16px;margin:0 0 14px;font-size:15px;line-height:1.6;color:#0E1C42;"><strong style="color:#8A1F16;">AI AWARENESS</strong> An AI will argue any side you ask for, and it can sound sure about points it has not checked. Test its argument against your actual rules. It may misdescribe your game or cite things that are not in it.</div><div class="q"><div class="q-prompt">The AI's argument that my game endorses a hollow value<span class="saved-dot"></span></div><textarea class="answer" data-key="aiHollow" data-label="The AI argument that my game endorses a hollow value" data-required></textarea></div><div class="q"><div class="q-prompt">The AI's strongest point<span class="saved-dot"></span></div><textarea class="answer" data-key="aiStrong" data-label="The AI&#39;s strongest point" data-required></textarea></div><div class="choices" data-key="rebutOrRevise" data-label="Rebut or revise" data-required><button class="choice" type="button" data-value="Rebut: the AI misreads my rules" data-fb="Good. Your reply must point to specific rules the AI got wrong or ignored.">Rebut: the AI misreads my rules</button><button class="choice" type="button" data-value="Revise: the AI found a real flaw" data-fb="Good. Say which rule you will change, and how it changes what the game rewards.">Revise: the AI found a real flaw</button><button class="choice" type="button" data-value="Both: partly wrong, partly right" data-fb="Good. Separate the two so each part has its own evidence.">Both: partly wrong, partly right</button></div><div class="choice-fb"></div><div class="q"><div class="q-prompt">My rebuttal or my revision<div class="q-hint">Use specific rules, and one idea from JStor find #4 if it helps.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="hollowResponse" data-label="My rebuttal or revision" data-required></textarea><div class="words"></div></div></div></div><div class="activity bl-cyan"><div class="activity-head"><div class="activity-num">4</div><div><div class="activity-title">Your AI-Use Log row</div><div class="activity-sub">The win-condition challenge</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Your AI-Use Log keeps one row for each time you use AI on this project. It is a requirement for your portfolio. Write this sprint's row here, then copy it into your running log.</div></div><div class="q"><div class="q-prompt">What I asked the AI to do<span class="saved-dot"></span></div><textarea class="answer" data-key="l13LogAsked" data-label="AI-Use Log: what I asked the AI to do" data-required></textarea></div><div class="q"><div class="q-prompt">What it gave me<span class="saved-dot"></span></div><textarea class="answer" data-key="l13LogGave" data-label="AI-Use Log: what it gave me" data-required></textarea></div><div class="q"><div class="q-prompt">How I checked or judged it<span class="saved-dot"></span></div><textarea class="answer" data-key="l13LogChecked" data-label="AI-Use Log: how I verified or critiqued it" data-required></textarea></div><div class="q"><div class="q-prompt">What I changed, and why<span class="saved-dot"></span></div><textarea class="answer" data-key="l13LogChanged" data-label="AI-Use Log: what I changed and why" data-required></textarea></div></div></div><button class="tab-next" data-next="revise">Continue: revise the win condition &#8594;</button></div>
+<!-- ===== Revise ===== -->
+<div class="tab-panel" id="tab-revise"><div class="activity bl-gold"><div class="activity-head"><div class="activity-num">5</div><div><div class="activity-title">Revise the win condition</div><div class="activity-sub">The version that stands</div></div></div><div class="activity-body"><div class="coach"><span class="ci">&#9679;</span><div>Now write the win condition the way it will stand for the rest of the year, whether or not it changed. Then plan how a real playtest will check it. Playtest cycle 3 comes next.</div></div><div class="q"><div class="q-prompt">My win condition, revised<div class="q-hint">The exact wording that will go in your Rules Document.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="winNew" data-label="My revised win condition" data-seed-from="L3.winCond" data-required></textarea></div><div class="q"><div class="q-prompt">Rules I changed because of this audit<div class="q-hint">Write "none" if you changed nothing, and say why.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="winRules" data-label="The rules I changed because of the audit" data-required></textarea></div><div class="q"><div class="q-prompt">What I want testers to show me about winning<div class="q-hint">One thing to watch for in playtest cycle 3.</div><span class="saved-dot"></span></div><textarea class="answer" data-key="winTest" data-label="What I will ask testers about winning" data-required></textarea></div><div class="check"><div class="check-k">QUICK CHECK &middot; NOT GRADED</div><div class="check-q">A good test of whether your win condition rewards what you claim is to</div><div class="check-row"><div class="opts"><button class="opt" data-correct="false" data-fb="Liking an ending says little about what behavior the rules rewarded.">Ask testers to say whether they liked the ending</button><button class="opt" data-correct="true" data-fb="Yes. Behavior in play shows what the rules actually reward.">Watch what winners did across turns and whether it matches your claim</button><button class="opt" data-correct="false" data-fb="An AI cannot tell you what real players do. Only playtesting can.">Ask an AI to predict how players will behave</button></div><div class="opt-fb"></div></div><button class="check-reset" type="button">Reset</button></div></div></div><button class="tab-next" data-next="wrap">Continue: wrap up &#8594;</button></div>
+<div class="tab-panel" id="tab-wrap"><div class="project-strip" data-fields="world,question"></div><div class="activity bl-gold"><div class="activity-head"><div class="activity-num">6</div><div><div class="activity-title">Your Lesson 13 work, on one page</div><div class="activity-sub">Download it. This PDF goes in with your Sprint 13 submission.</div></div></div><div class="activity-body"><div class="gathered"><div class="gathered-head"><div><div class="gk">ALL YOUR WORK FROM THIS LESSON</div><div class="gt">Review, copy, or download</div></div></div><div class="gathered-body"><textarea class="gathered-output" id="gathered" readonly></textarea><div class="gathered-actions"><button class="gbtn pdf" data-action="pdf" type="button">Download as PDF</button><button class="gbtn ghost" data-action="copy" type="button">Copy the text</button></div><div class="gstatus" id="gstatus"></div></div></div><div class="turn-in"><div class="turn-in-head"><div class="gk">BEFORE YOU TURN IT IN</div><div class="gt">Check each line</div></div><div class="turn-in-body"><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">My win-condition audit names what winning rewards, what it costs, and whom it leaves out, with specific rules.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">JStor find #4 is logged with a full citation, the claim, and how it bears on my win condition.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I read the AI's hollow-value argument, tested it against my rules, and wrote a rebuttal or a revision.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">My revised win condition is written out, and I wrote my AI-Use Log row.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I named my Word document LastName_FirstName_WinCondition_ELA10H and saved it in OneDrive: Optima &rarr; ELA &rarr; ELA10. I submitted Sprint 13 through the OneDrive tab in Canvas.</div></div><div class="turn-in-item"><div class="turn-in-check"></div><div class="turn-in-text">I added this lesson&#39;s PDF (LastName_DesignerLesson13_ELA10H) to the same submission.</div></div></div></div><div class="callout-gold" style="margin-top:14px;"><strong>Next.</strong> Your revised win condition goes into playtest cycle 3. Open <a href="designer-lesson-14-balance-and-playtest-3.html">Lesson 14: Balance and Playtest 3</a> in Week 3. <a href="designer-lesson-12-q3-milestone.html">Back to Lesson 12: Q3 Milestone</a>.</div></div></div></div>
+<div class="footer"><div class="f1"><span>Optima Academy Online</span> &middot; ENGLISH 2 HONORS &middot; Module 4 &middot; The Great Gatsby</div><div class="f2">The Designer&#39;s Table &middot; Lesson 13 of 18 &middot; The Win Condition</div><div class="f3">&copy; Optima Academy Online &middot; An Education Experience Company</div></div>
+</div>
+<script>window.PROJECT_LABELS = { world: "Your world", question: "Your design question" };</script>
+<script src="project.js"></script>
+</body>
+</html>
